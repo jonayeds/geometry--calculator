@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometry Gem</title>
+    
+<link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.3/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white">
+    <header></header>
+    <main class=" max-w-[1400px] mx-auto pt-20">
+        <!-- main content container -->
+        <div class="flex  flex-col lg:flex-row gap-7">
+            <!-- shape card container -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 flex-1 gap-5">
+                <div class="card  shadow-xl">
+                    <figure class="px-10 pt-10">
+                      <img src="./images/triangle.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title">Triangle</h2>
+                      <p>Area (A) =0.5 x b x h</p>
+                      <div class="flex gap-2">
+                       <input type="text" class="bg-gray-300 w-24 pl-2 rounded-md" id="triangle-b" placeholder="b"> <label for="b">cm</label>
+                       <input type="text" placeholder="h" class="bg-gray-300 w-24 pl-2 rounded-md" id="triangle-h"><label for="h">cm</label>
+                      </div>
+                     
+                        <button class="btn btn-primary w-full text-white" id="calculate-triangle">Calculate</button>
+                      
+                    </div>
+                  </div>
+
+                  <div class="card  shadow-xl">
+                    <figure class="px-10 pt-10">
+                      <img src="./images/rectangle.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title">Shoes!</h2>
+                      <p>If a dog chews shoes whose shoes does he choose?</p>
+                      <div class="card-actions">
+                        <button class="btn btn-primary">Buy Now</button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card  shadow-xl">
+                    <figure class="px-10 pt-10">
+                      <img src="./images/parallelogram.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title">Shoes!</h2>
+                      <p>If a dog chews shoes whose shoes does he choose?</p>
+                      <div class="card-actions">
+                        <button class="btn btn-primary">Buy Now</button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card   shadow-xl">
+                    <figure class="px-10 pt-10">
+                      <img src="./images/rhombus.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title">Shoes!</h2>
+                      <p>If a dog chews shoes whose shoes does he choose?</p>
+                      <div class="card-actions">
+                        <button class="btn btn-primary">Buy Now</button>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <!-- area calculation container -->
+            <div class="w-96 border-solid border-gray-300 border-2">
+                <h3 class="text-4xl text-center mt-9">Area Calculation</h3>
+                <h4 class="text-center mt-6 hidden" id="area-title-triangle">Area of Triangle is:<span id="area-triangle"></span></h4>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
